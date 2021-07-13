@@ -15,6 +15,8 @@ struct ContentView: View {
             ScrollView {
                 CurrentWeatherView(appServices: appServices)
                     .padding()
+                ForecastView(appServices: appServices)
+                    .padding()
             }
             .navigationTitle("Weather")
         }
