@@ -19,6 +19,15 @@ struct ContentView: View {
                     .padding()
             }
             .navigationTitle("Weather")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        appServices.refreshService.refresh()
+                    } label: {
+                        Label("Refresh", systemImage: "arrow.clockwise")
+                    }
+                }
+            }
         }
     }
 }

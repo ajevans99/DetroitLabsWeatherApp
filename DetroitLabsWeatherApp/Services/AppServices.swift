@@ -8,6 +8,7 @@
 import Foundation
 
 class AppServices {
+    let refreshService = RefreshService()
     let locationService = LocationService()
     let weatherService = WeatherService(apiKey: ConfigEnvironment.openWeatherAPIKey)
 }

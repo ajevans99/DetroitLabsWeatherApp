@@ -28,7 +28,8 @@ extension ForecastView {
         }
 
         func fetchWeather() {
-            appServices.locationService.publisher
+            appServices.refreshService.publisher
+                .flatMap { _ in self.appServices.locationService.publisher }
                 .flatMap(appServices.weatherService.getForcast)
                 .receive(on: RunLoop.main)
                 .sink(receiveCompletion: { [weak self] result in
