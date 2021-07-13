@@ -1,0 +1,8 @@
+//
+//  Development2.xcconfig
+//  DetroitLabsWeather
+//
+//  Created by Austin Evans on 7/11/21.
+//
+
+OPEN_WEATHER_API_KEY = // API KEY HERE

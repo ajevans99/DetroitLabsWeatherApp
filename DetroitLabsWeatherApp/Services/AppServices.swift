@@ -8,5 +8,5 @@
 import Foundation
 
 class AppServices {
-    let weatherService = WeatherService(apiKey: "")
+    let weatherService = WeatherService(apiKey: ConfigEnvironment.openWeatherAPIKey)
 }

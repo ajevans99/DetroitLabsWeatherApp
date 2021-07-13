@@ -21,6 +21,9 @@
 		9397553B269D1E4E00D55383 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93975530269D1E4E00D55383 /* Endpoint.swift */; };
 		9397553D269D1EAD00D55383 /* AppServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9397553C269D1EAD00D55383 /* AppServices.swift */; };
 		93975540269D1EDE00D55383 /* URLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9397553F269D1EDD00D55383 /* URLExtensions.swift */; };
+		9397554A269D203E00D55383 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 93975544269D203E00D55383 /* Release.xcconfig */; };
+		9397554B269D203E00D55383 /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 93975545269D203E00D55383 /* Development.xcconfig */; };
+		9397554D269D203E00D55383 /* ConfigEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93975547269D203E00D55383 /* ConfigEnvironment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,12 @@
 		93975530269D1E4E00D55383 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		9397553C269D1EAD00D55383 /* AppServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppServices.swift; sourceTree = "<group>"; };
 		9397553F269D1EDD00D55383 /* URLExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLExtensions.swift; sourceTree = "<group>"; };
+		93975542269D203E00D55383 /* Development.xcconfig.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Development.xcconfig.sample; sourceTree = "<group>"; };
+		93975543269D203E00D55383 /* Release.xcconfig.sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Release.xcconfig.sample; sourceTree = "<group>"; };
+		93975544269D203E00D55383 /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		93975545269D203E00D55383 /* Development.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
+		93975547269D203E00D55383 /* ConfigEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigEnvironment.swift; sourceTree = "<group>"; };
+		9397554E269D219600D55383 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +83,7 @@
 				93975513269D1E1800D55383 /* DetroitLabsWeatherAppApp.swift */,
 				93975515269D1E1800D55383 /* ContentView.swift */,
 				93975517269D1E1A00D55383 /* Assets.xcassets */,
+				93975541269D203E00D55383 /* Config */,
 				9397553E269D1EDD00D55383 /* Extensions */,
 				93975521269D1E4E00D55383 /* Services */,
 				93975519269D1E1A00D55383 /* Preview Content */,
@@ -127,6 +137,19 @@
 				9397553F269D1EDD00D55383 /* URLExtensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		93975541269D203E00D55383 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				9397554E269D219600D55383 /* Info.plist */,
+				93975547269D203E00D55383 /* ConfigEnvironment.swift */,
+				93975545269D203E00D55383 /* Development.xcconfig */,
+				93975542269D203E00D55383 /* Development.xcconfig.sample */,
+				93975544269D203E00D55383 /* Release.xcconfig */,
+				93975543269D203E00D55383 /* Release.xcconfig.sample */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,8 +210,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9397554B269D203E00D55383 /* Development.xcconfig in Resources */,
 				9397551B269D1E1A00D55383 /* Preview Assets.xcassets in Resources */,
 				93975518269D1E1A00D55383 /* Assets.xcassets in Resources */,
+				9397554A269D203E00D55383 /* Release.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +231,7 @@
 				9397553B269D1E4E00D55383 /* Endpoint.swift in Sources */,
 				93975539269D1E4E00D55383 /* WeatherConditions.swift in Sources */,
 				93975537269D1E4E00D55383 /* Forecast.swift in Sources */,
+				9397554D269D203E00D55383 /* ConfigEnvironment.swift in Sources */,
 				93975514269D1E1800D55383 /* DetroitLabsWeatherAppApp.swift in Sources */,
 				93975532269D1E4E00D55383 /* WeatherError.swift in Sources */,
 				93975535269D1E4E00D55383 /* WeatherService.swift in Sources */,
@@ -219,6 +245,7 @@
 /* Begin XCBuildConfiguration section */
 		9397551C269D1E1A00D55383 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93975545269D203E00D55383 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -280,6 +307,7 @@
 		};
 		9397551D269D1E1A00D55383 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93975544269D203E00D55383 /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -335,6 +363,7 @@
 		};
 		9397551F269D1E1A00D55383 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93975545269D203E00D55383 /* Development.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -344,6 +373,10 @@
 				DEVELOPMENT_TEAM = ML89Z5TSJK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DetroitLabsWeatherApp/Config/Info.plist;
+				INFOPLIST_KEY_CFBundleExecutable = DetroitLabsWeatherApp;
+				INFOPLIST_KEY_CFBundleName = DetroitLabsWeatherApp;
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -365,6 +398,7 @@
 		};
 		93975520269D1E1A00D55383 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93975544269D203E00D55383 /* Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -374,6 +408,10 @@
 				DEVELOPMENT_TEAM = ML89Z5TSJK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DetroitLabsWeatherApp/Config/Info.plist;
+				INFOPLIST_KEY_CFBundleExecutable = DetroitLabsWeatherApp;
+				INFOPLIST_KEY_CFBundleName = DetroitLabsWeatherApp;
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
