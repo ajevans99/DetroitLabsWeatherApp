@@ -13,7 +13,7 @@ struct Forecast: Codable {
         let conditions: WeatherConditions
         let weather: [Weather]
         let wind: Wind
-        let id = UUID()
+        var id: Double { date.timeIntervalSince1970 }
 
         var icon: String {
             // Fallback to cloud icon if weather comes back empty

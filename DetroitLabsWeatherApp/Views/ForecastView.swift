@@ -51,7 +51,6 @@ struct ForecastView: View {
         .foregroundColor(.white)
         .frame(maxWidth: .infinity, minHeight: 300)
         .padding()
-        .background(Color.green.cornerRadius(32))
-        .shadow(radius: 8)
+        .background(Color.green.cornerRadius(32).shadow(radius: 8))
     }
 }
