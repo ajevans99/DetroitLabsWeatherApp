@@ -18,8 +18,8 @@ struct ForecastView: View {
     var body: some View {
         Group {
             switch viewModel.state {
-            case .error(let error):
-                Text("An error occurred \(error.localizedDescription)")
+            case .error:
+                ErrorView()
             case .loading:
                 Text("Loading")
             case .ready(let forecast):

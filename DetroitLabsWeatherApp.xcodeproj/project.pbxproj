@@ -34,6 +34,7 @@
 		93975567269D2C4000D55383 /* ForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93975565269D2C4000D55383 /* ForecastView.swift */; };
 		93975568269D2C4000D55383 /* ForecastView+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93975566269D2C4000D55383 /* ForecastView+ViewModel.swift */; };
 		9397556B269D2D3700D55383 /* RefreshService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9397556A269D2D3700D55383 /* RefreshService.swift */; };
+		9397556D269D306700D55383 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9397556C269D306600D55383 /* ErrorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		93975565269D2C4000D55383 /* ForecastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastView.swift; sourceTree = "<group>"; };
 		93975566269D2C4000D55383 /* ForecastView+ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ForecastView+ViewModel.swift"; sourceTree = "<group>"; };
 		9397556A269D2D3700D55383 /* RefreshService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshService.swift; sourceTree = "<group>"; };
+		9397556C269D306600D55383 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +184,7 @@
 				93975551269D27B800D55383 /* CurrentWeatherView+ViewModel.swift */,
 				93975565269D2C4000D55383 /* ForecastView.swift */,
 				93975566269D2C4000D55383 /* ForecastView+ViewModel.swift */,
+				9397556C269D306600D55383 /* ErrorView.swift */,
 				93975553269D27B800D55383 /* AsyncImage */,
 			);
 			path = Views;
@@ -293,6 +296,7 @@
 				9397555A269D27B800D55383 /* CurrentWeatherView+ViewModel.swift in Sources */,
 				9397555E269D27B800D55383 /* EnvironmentValues+ImageCache.swift in Sources */,
 				93975516269D1E1800D55383 /* ContentView.swift in Sources */,
+				9397556D269D306700D55383 /* ErrorView.swift in Sources */,
 				93975538269D1E4E00D55383 /* Location.swift in Sources */,
 				9397553B269D1E4E00D55383 /* Endpoint.swift in Sources */,
 				93975539269D1E4E00D55383 /* WeatherConditions.swift in Sources */,
