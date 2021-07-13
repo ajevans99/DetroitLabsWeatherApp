@@ -28,11 +28,13 @@ extension CurrentWeatherView {
         }
 
         func fetchWeather() {
-            appServices.weatherService.getCurrentConditions(for: Location(latitude: 42.3314, longitude: -83.0458))
+            appServices.locationService.publisher
+                .flatMap(appServices.weatherService.getCurrentConditions)
                 .receive(on: RunLoop.main)
                 .sink(receiveCompletion: { [weak self] result in
                     switch result {
                     case .failure(let error):
+                        print(error)
                         self?.state = .error(error)
                     case .finished:
                         break
