@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		93975514269D1E1800D55383 /* DetroitLabsWeatherAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93975513269D1E1800D55383 /* DetroitLabsWeatherAppApp.swift */; };
+		93975514269D1E1800D55383 /* DetroitLabsWeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93975513269D1E1800D55383 /* DetroitLabsWeatherApp.swift */; };
 		93975516269D1E1800D55383 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93975515269D1E1800D55383 /* ContentView.swift */; };
 		93975518269D1E1A00D55383 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93975517269D1E1A00D55383 /* Assets.xcassets */; };
 		9397551B269D1E1A00D55383 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9397551A269D1E1A00D55383 /* Preview Assets.xcassets */; };
@@ -24,11 +24,17 @@
 		9397554A269D203E00D55383 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 93975544269D203E00D55383 /* Release.xcconfig */; };
 		9397554B269D203E00D55383 /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 93975545269D203E00D55383 /* Development.xcconfig */; };
 		9397554D269D203E00D55383 /* ConfigEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93975547269D203E00D55383 /* ConfigEnvironment.swift */; };
+		9397555A269D27B800D55383 /* CurrentWeatherView+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93975551269D27B800D55383 /* CurrentWeatherView+ViewModel.swift */; };
+		9397555C269D27B800D55383 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93975554269D27B800D55383 /* ImageCache.swift */; };
+		9397555D269D27B800D55383 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93975555269D27B800D55383 /* ImageLoader.swift */; };
+		9397555E269D27B800D55383 /* EnvironmentValues+ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93975556269D27B800D55383 /* EnvironmentValues+ImageCache.swift */; };
+		9397555F269D27B800D55383 /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93975557269D27B800D55383 /* AsyncImage.swift */; };
+		93975560269D27B800D55383 /* CurrentWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93975558269D27B800D55383 /* CurrentWeatherView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		93975510269D1E1800D55383 /* DetroitLabsWeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DetroitLabsWeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		93975513269D1E1800D55383 /* DetroitLabsWeatherAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetroitLabsWeatherAppApp.swift; sourceTree = "<group>"; };
+		93975513269D1E1800D55383 /* DetroitLabsWeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetroitLabsWeatherApp.swift; sourceTree = "<group>"; };
 		93975515269D1E1800D55383 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		93975517269D1E1A00D55383 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9397551A269D1E1A00D55383 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -48,6 +54,12 @@
 		93975545269D203E00D55383 /* Development.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		93975547269D203E00D55383 /* ConfigEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigEnvironment.swift; sourceTree = "<group>"; };
 		9397554E269D219600D55383 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93975551269D27B800D55383 /* CurrentWeatherView+ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CurrentWeatherView+ViewModel.swift"; sourceTree = "<group>"; };
+		93975554269D27B800D55383 /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		93975555269D27B800D55383 /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		93975556269D27B800D55383 /* EnvironmentValues+ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EnvironmentValues+ImageCache.swift"; sourceTree = "<group>"; };
+		93975557269D27B800D55383 /* AsyncImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
+		93975558269D27B800D55383 /* CurrentWeatherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeatherView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +92,9 @@
 		93975512269D1E1800D55383 /* DetroitLabsWeatherApp */ = {
 			isa = PBXGroup;
 			children = (
-				93975513269D1E1800D55383 /* DetroitLabsWeatherAppApp.swift */,
+				93975513269D1E1800D55383 /* DetroitLabsWeatherApp.swift */,
 				93975515269D1E1800D55383 /* ContentView.swift */,
+				93975550269D27B800D55383 /* Views */,
 				93975517269D1E1A00D55383 /* Assets.xcassets */,
 				93975541269D203E00D55383 /* Config */,
 				9397553E269D1EDD00D55383 /* Extensions */,
@@ -150,6 +163,27 @@
 				93975543269D203E00D55383 /* Release.xcconfig.sample */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		93975550269D27B800D55383 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				93975551269D27B800D55383 /* CurrentWeatherView+ViewModel.swift */,
+				93975558269D27B800D55383 /* CurrentWeatherView.swift */,
+				93975553269D27B800D55383 /* AsyncImage */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		93975553269D27B800D55383 /* AsyncImage */ = {
+			isa = PBXGroup;
+			children = (
+				93975554269D27B800D55383 /* ImageCache.swift */,
+				93975555269D27B800D55383 /* ImageLoader.swift */,
+				93975556269D27B800D55383 /* EnvironmentValues+ImageCache.swift */,
+				93975557269D27B800D55383 /* AsyncImage.swift */,
+			);
+			path = AsyncImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,14 +260,20 @@
 			files = (
 				93975536269D1E4E00D55383 /* APIManager.swift in Sources */,
 				93975540269D1EDE00D55383 /* URLExtensions.swift in Sources */,
+				9397555C269D27B800D55383 /* ImageCache.swift in Sources */,
+				9397555A269D27B800D55383 /* CurrentWeatherView+ViewModel.swift in Sources */,
+				9397555E269D27B800D55383 /* EnvironmentValues+ImageCache.swift in Sources */,
 				93975516269D1E1800D55383 /* ContentView.swift in Sources */,
 				93975538269D1E4E00D55383 /* Location.swift in Sources */,
 				9397553B269D1E4E00D55383 /* Endpoint.swift in Sources */,
 				93975539269D1E4E00D55383 /* WeatherConditions.swift in Sources */,
 				93975537269D1E4E00D55383 /* Forecast.swift in Sources */,
 				9397554D269D203E00D55383 /* ConfigEnvironment.swift in Sources */,
-				93975514269D1E1800D55383 /* DetroitLabsWeatherAppApp.swift in Sources */,
+				9397555D269D27B800D55383 /* ImageLoader.swift in Sources */,
+				93975560269D27B800D55383 /* CurrentWeatherView.swift in Sources */,
+				93975514269D1E1800D55383 /* DetroitLabsWeatherApp.swift in Sources */,
 				93975532269D1E4E00D55383 /* WeatherError.swift in Sources */,
+				9397555F269D27B800D55383 /* AsyncImage.swift in Sources */,
 				93975535269D1E4E00D55383 /* WeatherService.swift in Sources */,
 				9397553D269D1EAD00D55383 /* AppServices.swift in Sources */,
 				9397553A269D1E4E00D55383 /* CurrentConditions.swift in Sources */,

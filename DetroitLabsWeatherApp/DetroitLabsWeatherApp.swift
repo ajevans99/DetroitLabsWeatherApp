@@ -1,5 +1,5 @@
 //
-//  DetroitLabsWeatherAppApp.swift
+//  DetroitLabsWeatherApp.swift
 //  DetroitLabsWeatherApp
 //
 //  Created by Austin Evans on 7/12/21.
@@ -8,10 +8,12 @@
 import SwiftUI
 
 @main
-struct DetroitLabsWeatherAppApp: App {
+struct DetroitLabsWeatherApp: App {
+    let appServices = AppServices()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(appServices: appServices)
         }
     }
 }
