@@ -2,6 +2,8 @@
 
 A basic weather app for technical interview with Detroit Labs. This app was built with SwiftUI and has an MVVM architecture with Combine.
 
+![Screenshot of the Weather app's main page](screenshots/page1.png)
+
 ## Setup
 
 Clone and open with Xcode 12.0 or later (built with Xcode 13 beta).
