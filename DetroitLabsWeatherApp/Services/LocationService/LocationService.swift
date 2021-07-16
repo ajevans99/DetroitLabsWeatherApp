@@ -14,6 +14,7 @@ class LocationService: NSObject, CLLocationManagerDelegate {
     static let defaultLocation = Location(latitude: 42.3314, longitude: -83.0458) // Coords of Detroit
 
     let locationManager: CLLocationManager
+    /// A subject that wraps a location and publishes a new element whenever the value changes.
     private let locationPublisher: CurrentValueSubject<Location, WeatherError>
     var publisher: AnyPublisher<Location, WeatherError>
 
