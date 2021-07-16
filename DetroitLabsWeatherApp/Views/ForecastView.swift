@@ -38,7 +38,7 @@ struct ForecastView: View {
                                     Text("\(conditions.conditions.temp, specifier: "%.0f")")
                                         .font(.system(size: 20, weight: .bold, design: .rounded))
                                     Text("\(conditions.date, style: .time)")
-                                        .font(.system(size: 7, weight: .bold, design: .rounded))
+                                        .font(.system(size: 7, weight: .bold, design: .monospaced))
                                 }
                             }
                         }
