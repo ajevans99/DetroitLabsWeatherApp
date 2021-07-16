@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9334221326A1D5EE00F8A5BC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9334221226A1D5EE00F8A5BC /* README.md */; };
 		93975514269D1E1800D55383 /* DetroitLabsWeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93975513269D1E1800D55383 /* DetroitLabsWeatherApp.swift */; };
 		93975516269D1E1800D55383 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93975515269D1E1800D55383 /* ContentView.swift */; };
 		93975518269D1E1A00D55383 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93975517269D1E1A00D55383 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9334221226A1D5EE00F8A5BC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		93975510269D1E1800D55383 /* DetroitLabsWeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DetroitLabsWeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93975513269D1E1800D55383 /* DetroitLabsWeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetroitLabsWeatherApp.swift; sourceTree = "<group>"; };
 		93975515269D1E1800D55383 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 		93975507269D1E1800D55383 = {
 			isa = PBXGroup;
 			children = (
+				9334221226A1D5EE00F8A5BC /* README.md */,
 				93975512269D1E1800D55383 /* DetroitLabsWeatherApp */,
 				93975511269D1E1800D55383 /* Products */,
 			);
@@ -277,6 +280,7 @@
 			files = (
 				9397554B269D203E00D55383 /* Development.xcconfig in Resources */,
 				9397551B269D1E1A00D55383 /* Preview Assets.xcassets in Resources */,
+				9334221326A1D5EE00F8A5BC /* README.md in Resources */,
 				93975518269D1E1A00D55383 /* Assets.xcassets in Resources */,
 				9397554A269D203E00D55383 /* Release.xcconfig in Resources */,
 			);
