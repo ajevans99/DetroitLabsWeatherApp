@@ -30,8 +30,10 @@ struct ForecastView: View {
                     ForEach(forecast.sortedDateKeys, id: \.self) { day in
                         Text("\(forecast.conditionsByDay[day]![0].date, style: .date)")
                         ForecastDayView(allConditions: forecast.conditionsByDay[day] ?? [])
-                        Divider()
-                            .padding()
+                        if day != forecast.sortedDateKeys.last {
+                            Divider()
+                                .padding()
+                        }
                     }
                 }
             }
@@ -46,6 +48,12 @@ struct ForecastView: View {
 struct ForecastDayView: View {
     let allConditions: [Forecast.Conditions]
 
+    private let timeFormatter: DateFormatter = {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "ha"
+        return dateFormatter
+    }()
+
     var body: some View {
         HStack {
             ForEach(allConditions) { conditions in
@@ -55,8 +63,8 @@ struct ForecastDayView: View {
                         .scaleEffect(1.7)
                     Text("\(conditions.conditions.temp, specifier: "%.0f")")
                         .font(.system(size: 20, weight: .bold, design: .rounded))
-                    Text("\(conditions.date, style: .time)")
-                        .font(.system(size: 7, weight: .bold, design: .monospaced))
+                    Text("\(conditions.date, formatter: timeFormatter)")
+                        .font(.system(size: 16, weight: .bold, design: .monospaced))
                 }
             }
         }
