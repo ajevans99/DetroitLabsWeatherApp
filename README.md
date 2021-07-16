@@ -2,7 +2,7 @@
 
 A basic weather app for technical interview with Detroit Labs. This app was built with SwiftUI and has an MVVM architecture with Combine.
 
-![Screenshot of the Weather app's main page](screenshots/page1.png)
+<img src="https://github.com/ajevans99/DetroitLabsWeatherApp/blob/main/screenshots/page1.png" alt="Screenshot of the Weather app's main page" width="200">
 
 ## Setup
 
